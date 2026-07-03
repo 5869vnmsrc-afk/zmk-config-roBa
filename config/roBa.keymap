@@ -67,14 +67,14 @@
         kakko: kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            bindings = <&kp JP_LPAR &kp JP_RPAR &kp LEFT_ARROW>;
             label = "KAKKO";
         };
 
         kaku_kakko: kaku_kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            bindings = <&kp JP_LBKT &kp JP_RBKT &kp LEFT_ARROW>;
             label = "KAKU_KAKKO";
         };
     };
@@ -95,9 +95,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp ESCAPE            &kp SLASH                   &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB               &kp SEMICOLON               &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT QUESTION
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &kp I         &kp O       &kp P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &kp ESCAPE            &kp JP_FSLH                 &kp H        &kp J  &kp K         &kp L       &kp JP_MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB               &kp JP_COLON                &kp N        &kp M  &kp JP_COMMA  &kp JP_DOT  &mt JP_QMARK
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 1 SPACE  &kp INT_MUHENKAN      &lt_to_layer_0 3 BACKSPACE  &lt 2 ENTER                             &lt 5 DEL
             >;
         };
@@ -113,10 +113,10 @@
 
         NUM {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH        &kp DOLLAR   &kp PERCENT                               &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
-&kp AMPERSAND    &kp SQT            &kp UNDERSCORE  &kp INT_YEN  &kp CARET    &kp ASTRK      &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON
-&kp LESS_THAN    &kp GREATER_THAN   &kp BACKSLASH   &kp AT       &kp PIPE     &kp PLUS       &kp KP_PLUS   &kp KP_N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
-&kp MINUS        &kakko             &kaku_kakko     &trans       &trans       &trans         &trans        &trans                                                              &trans
+&kp JP_EXCL    &kp JP_DQT  &kp JP_POUND  kp JP_DLLR   &kp JP_PRCNT                                   &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_EQUAL
+&kp JP_AMPS    &kp JP_SQT  &kp JP_UNDER  &kp INT_YEN  &kp JP_CARET   &kp JP_ASTRK      &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_COLON
+&kp JP_LT      &kp JP_GT   &kp JP_BSLH   &kp JP_AT    &kp PIPE       &kp JP_PLUS       &kp KP_PLUS   &kp KP_N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp JP_DOT
+&kp JP_MINUS   &kakko      &kaku_kakko   &trans       &trans         &trans            &trans        &trans                                                              &trans
             >;
         };
 

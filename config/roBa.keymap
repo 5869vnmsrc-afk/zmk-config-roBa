@@ -116,7 +116,7 @@
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH        &kp DOLLAR   &kp PERCENT                               &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
 &kp AMPERSAND    &kp SQT            &kp UNDERSCORE  &kp INT_YEN  &kp CARET    &kp ASTRK      &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON
 &kp LESS_THAN    &kp GREATER_THAN   &kp BACKSLASH   &kp AT       &kp PIPE     &kp PLUS       &kp KP_PLUS   &kp KP_N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
-&kp MINUS        &kp TILDE          &trans          &trans       &trans       &trans         &trans        &trans                                                              &trans
+&kp MINUS        &kakko             &kaku_kakko     &trans       &trans       &trans         &trans        &trans                                                              &trans
             >;
         };
 

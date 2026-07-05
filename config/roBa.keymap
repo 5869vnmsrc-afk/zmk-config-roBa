@@ -44,7 +44,7 @@
 
         ttt {
             bindings = <&kp T>;
-            key-positions = 2 3>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 

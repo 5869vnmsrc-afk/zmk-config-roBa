@@ -44,25 +44,25 @@
 
         ttt {
             bindings = <&kp T>;
-            key-positions = <3 4>;
+            key-positions = 2 3>;
             layers = <0>;
         };
 
         percent {
             bindings = <&kp JP_PRCNT>;
-            key-positions = <3 4>;
+            key-positions = <2 3>;
             layers = <2>;
         };
 
         ggg {
             bindings = <&kp G>;
-            key-positions = <13 14>;
+            key-positions = <12 13>;
             layers = <0>;
         };
 
         bbb {
             bindings = <&kp B>;
-            key-positions = <25 26>;
+            key-positions = <24 25>;
             layers = <0>;
         };
     };

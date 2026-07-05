@@ -30,29 +30,34 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+            key-positions = <32 33>;
+            layers = <0>;
         };
 
         eq {
             bindings = <&kp EQUAL>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        ttt {
+            bindings = <&kp T>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        ggg {
+            bindings = <&kp G>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        bbb {
+            bindings = <&kp B>;
             key-positions = <24 25>;
+            layers = <0>;
         };
     };
 

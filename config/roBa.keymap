@@ -59,6 +59,12 @@
             key-positions = <24 25>;
             layers = <0>;
         };
+
+        pcnt {
+            bindings = <&kp JP_PRCNT>;
+            key-positions = <24 25>;
+            layers = <2>;
+        };
     };
 
     macros {

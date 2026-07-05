@@ -31,13 +31,13 @@
         compatible = "zmk,combos";
 
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp JP_DQT>;
             key-positions = <32 33>;
             layers = <0>;
         };
 
         eq {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp JP_EQUAL>;
             key-positions = <20 21>;
             layers = <0>;
         };
@@ -62,7 +62,7 @@
 
         pcnt {
             bindings = <&kp JP_PRCNT>;
-            key-positions = <24 25>;
+            key-positions = <2 3>;
             layers = <2>;
         };
     };

@@ -41,30 +41,6 @@
             key-positions = <20 21>;
             layers = <0>;
         };
-
-        ttt {
-            bindings = <&kp T>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        percent {
-            bindings = <&kp JP_PRCNT>;
-            key-positions = <2 3>;
-            layers = <2>;
-        };
-
-        ggg {
-            bindings = <&kp G>;
-            key-positions = <12 13>;
-            layers = <0>;
-        };
-
-        bbb {
-            bindings = <&kp B>;
-            key-positions = <24 25>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -117,7 +93,7 @@
             bindings = <
 &kp F1   &kp F2  &kp F3          &kp F4          &kp F5                                     &trans  &trans  &trans  &trans  &trans
 &kp F6   &kp F7  &kp F8          &kp F9          &kp F10         &kp F11            &trans  &trans  &trans  &trans  &trans  &trans
-&kp F12  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &kp LANGUAGE_1  &kp LS(LG(S))      &trans  &trans  &trans  &trans  &trans  &trans
+&kp F12  &trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &kp LS(LG(S))      &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans  &trans          &trans          &trans          &trans             &trans  &trans                          &trans
             >;
         };

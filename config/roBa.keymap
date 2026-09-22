@@ -64,6 +64,34 @@
             bindings = <&kp JP_LBKT &kp JP_RBKT &kp LEFT_ARROW>;
             label = "KAKU_KAKKO";
         };
+
+        add_row: add_row {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SPACE) &kp LC(C) &kp LC(PLUS)>;
+            label = "ADD_ROW";
+        };
+
+        del_row: del_row {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SPACE) &kp LC(MINUS)>;
+            label = "DEL_ROW";
+        };
+
+        add_column: add_column {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE) &kp LC(C) &kp LC(PLUS)>;
+            label = "ADD_COLUMN";
+        };
+
+        del_column: del_column {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE) &kp LC(MINUS)>;
+            label = "DEL_COLUMN";
+        };
     };
 
     behaviors {
@@ -91,10 +119,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                       &trans  &trans  &trans  &trans  &trans
-&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11             &trans          &trans  &trans  &trans  &trans  &trans
-&kp F12  &trans  &trans  &trans  &trans   &kp LANGUAGE_2      &kp LANGUAGE_1  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans   &trans              &trans          &trans                          &trans
+&kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                       &trans  &trans                 &trans           &trans    &trans
+&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11             &trans          &trans  &kp LC(PAGE_UP)        &kp LC(LS(TAB))  &add_row  &add_column
+&kp F12  &trans  &trans  &trans  &trans   &kp LANGUAGE_2      &kp LANGUAGE_1  &trans  &kp LC(LS(PAGE_DOWN))  &kp LC(TAB)      &del_row  &del_column
+&trans   &trans  &trans  &trans  &trans   &trans              &trans          &trans                                                    &trans
             >;
         };
 

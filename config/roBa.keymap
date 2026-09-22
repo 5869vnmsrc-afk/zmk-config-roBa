@@ -68,7 +68,7 @@
         add_row: add_row {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(SPACE) &kp LC(C) &kp LC(PLUS)>;
+            bindings = <&kp LS(SPACE) &kp LC(C) &kp LC(SEMICOLON)>;
             label = "ADD_ROW";
         };
 
@@ -82,7 +82,7 @@
         add_column: add_column {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE) &kp LC(C) &kp LC(PLUS)>;
+            bindings = <&kp LC(SPACE) &kp LC(C) &kp LC(SEMICOLON)>;
             label = "ADD_COLUMN";
         };
 

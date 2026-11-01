@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 #include "keys_jp.h"
 
 &mt {
@@ -39,36 +38,6 @@
             bindings = <&kp JP_EQUAL>;
             key-positions = <20 21>;
             layers = <0>;
-        };
-
-        layer_5 {
-            bindings = <&mo 5>;
-            key-positions = <8 9>;
-        };
-
-        left_click {
-            bindings = <&mkp MB1>;
-            key-positions = <18 19>;
-        };
-
-        right_click {
-            bindings = <&mkp MB2>;
-            key-positions = <19 20>;
-        };
-
-        mid_click {
-            bindings = <&mkp MB3>;
-            key-positions = <19 31>;
-        };
-
-        prev_click {
-            bindings = <&mkp MB4>;
-            key-positions = <30 31>;
-        };
-
-        next_click {
-            bindings = <&mkp MB5>;
-            key-positions = <31 32>;
         };
     };
 
